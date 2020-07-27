@@ -1,0 +1,57 @@
+.note__content--icon {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  width: $icono_actividad_size;
+  height: $icono_actividad_size;
+  z-index: 999;
+}
+.mag_contenido_relacionado_maguared {
+  min-height: 105px;
+}
+.note__content--icon.icon-m-video {
+  background: url(images/ico-m-video.png) no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-libro {
+  background: url(images/ico-m-libro.png) no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-audio {
+  background: url(images/ico-m-audio.png) no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-interactivo {
+  background: url(images/ico-m-interactivo.png) no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-app {
+  background: url(images/ico-m-app.png) no-repeat;
+  background-size: 100%;
+}
+
+.note__content--icon.icon-m-video.mag_contenido_relacionado_maguared {
+  background: url(images/ico-actividad.png) right bottom no-repeat,
+    url(images/ico-m-video.png) left top no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-libro.mag_contenido_relacionado_maguared {
+  background: url(images/ico-actividad.png) right bottom no-repeat,
+    url(images/ico-m-libro.png) left top no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-audio.mag_contenido_relacionado_maguared {
+  background: url(images/ico-actividad.png) right bottom no-repeat,
+    url(images/ico-m-audio.png) left top no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-interactivo.mag_contenido_relacionado_maguared {
+  background: url(images/ico-actividad.png) right bottom no-repeat,
+    url(images/ico-m-interactivo.png) left top no-repeat;
+  background-size: 100%;
+}
+.note__content--icon.icon-m-app.mag_contenido_relacionado_maguared {
+  background: url(images/ico-actividad.png) right bottom no-repeat,
+    url(images/ico-m-app.png) left top no-repeat;
+  background-size: 100%;
+}

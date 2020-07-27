@@ -1,0 +1,8 @@
+/* Change background */
+body.login {
+  background-image: url('../images/login/background-login.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.login #nav { margin: 15px 0 0;}

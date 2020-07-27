@@ -1,0 +1,323 @@
+.note {
+  padding: 15px 10px 20px;
+}
+.note--blue {
+  background-color: rgba(4, 112, 168, 0.7);
+}
+.note--orange {
+  background-color: rgba(246, 187, 112, 0.6);
+}
+.note .link-1 {
+  display: inline-block;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .note .link-1 {
+    margin-top: 35px;
+  }
+}
+.note .heading-note--bold {
+  margin-bottom: 15px;
+}
+.note__hidden-content {
+  display: none;
+}
+.note img {
+  width: 100%;
+}
+.note figure {
+  margin-bottom: 15px;
+  position: relative;
+}
+.note figure .ico-play {
+  height: 93px;
+  left: 50%;
+  opacity: 0.65;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 93px;
+}
+.note__overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7777;
+}
+.note__overlay .link-1 {
+  border-radius: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+/* miniaturas-iconos */
+.note__content {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .note__content {
+    padding-right: 20px;
+  }
+  .note__content .heading-section {
+    text-align: left;
+  }
+  .note__content .link-1 {
+    float: right;
+  }
+}
+.note--standard {
+  border: 2px dashed #fff;
+}
+.note--standard figure {
+  order: 1;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .note--standard figure {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .note--standard {
+    display: flex;
+    padding: 20px 40px;
+  }
+  .note--standard > * {
+    width: 50%;
+  }
+}
+.note--short {
+  border-top: 1px dashed #584b3e;
+  padding: 13px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .note--short .note__content {
+    padding-right: 0;
+  }
+}
+.note--short .note__overlay {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+.note--short figure {
+  margin-bottom: 0;
+  position: relative;
+}
+.note--short figure img {
+  display: block;
+}
+.note--short:hover .note__overlay,
+.note--short:active .note__overlay {
+  opacity: 1;
+}
+.note--title {
+  padding: 0;
+  text-align: center;
+}
+.note--title .heading-note--title {
+  margin-bottom: 5px;
+}
+.note--title figure {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .note--title .note__content {
+    padding-right: 0;
+  }
+}
+.note--title .link-1 {
+  float: none;
+  margin-top: 0;
+}
+.note--title-image {
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+}
+.note--title-image .link-1 {
+  float: none;
+  margin: 15px auto 0;
+}
+@media screen and (min-width: 1280px) {
+  .note--title-image .link-1 {
+    float: left;
+  }
+}
+.note--media {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .note--media {
+    padding-bottom: 20px;
+  }
+}
+.note--media .heading-section {
+  text-align: left;
+}
+.note--media .note__cta-expand {
+  display: table;
+  float: none;
+  margin: 0 auto;
+}
+.note--media p {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .note--media .note__content {
+    padding-right: 0;
+  }
+}
+.note--media .note__media--video {
+  max-width: 830px;
+  margin: 0 auto;
+}
+.note--media .note__media--video .note__media__container {
+  margin-bottom: 15px;
+  padding-top: 56%;
+  position: relative;
+}
+.note--media .note__media--video .note__media__container iframe {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.note--media .note__media--audio,
+.note--media .note__media--apps {
+  position: relative;
+}
+.note--media .note__media--audio .note__media__container,
+.note--media .note__media--apps .note__media__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.note--media .note__media--audio .note__media__container figure,
+.note--media .note__media--apps .note__media__container figure {
+  margin-bottom: 0;
+}
+.note--media .note__media--audio .note__media__container figure,
+.note--media
+  .note__media--audio
+  .note__media__container
+  .note__media__audio-content,
+.note--media
+  .note__media--audio
+  .note__media__container
+  .note__media__apps-content,
+.note--media .note__media--apps .note__media__container figure,
+.note--media
+  .note__media--apps
+  .note__media__container
+  .note__media__audio-content,
+.note--media
+  .note__media--apps
+  .note__media__container
+  .note__media__apps-content {
+  flex: 1 100%;
+}
+@media screen and (min-width: 1280px) {
+  .note--media .note__media--audio .note__media__container figure,
+  .note--media .note__media--apps .note__media__container figure {
+    flex: 1 40%;
+  }
+  .note--media
+    .note__media--audio
+    .note__media__container
+    .note__media__audio-content,
+  .note--media
+    .note__media--audio
+    .note__media__container
+    .note__media__apps-content,
+  .note--media
+    .note__media--apps
+    .note__media__container
+    .note__media__audio-content,
+  .note--media
+    .note__media--apps
+    .note__media__container
+    .note__media__apps-content {
+    flex: 1 60%;
+  }
+}
+.note--media .note__media--audio .note__media__apps-content,
+.note--media .note__media--apps .note__media__apps-content {
+  text-align: center;
+  width: 100%;
+}
+.note--media .note__media--audio .note__media__apps-content .link-1,
+.note--media .note__media--apps .note__media__apps-content .link-1 {
+  width: 171px;
+  min-height: 52px;
+  vertical-align: top;
+  float: none;
+}
+@media screen and (min-width: 1280px) {
+  .note--media .note__media--audio .note__media__apps-content .link-1,
+  .note--media .note__media--apps .note__media__apps-content .link-1 {
+    width: 171px;
+    min-height: 52px;
+    vertical-align: top;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .note--media .note__media--audio .visualizer,
+  .note--media .note__media--apps .visualizer {
+    padding-top: 28%;
+    position: relative;
+  }
+  .note--media .note__media--audio wave,
+  .note--media .note__media--apps wave {
+    height: 100% !important;
+    left: 0;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+  }
+}
+.note--media .note__media--book .note__media__container {
+  margin-bottom: 15px;
+  padding-top: 56%;
+  position: relative;
+}
+.note--media .note__media--book .note__media__container iframe,
+.note--media .note__media--book .note__media__container .real3dflipbook-2,
+.note--media .note__media--book .note__media__container > div {
+  height: 100% !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+}
+.note--media .share-box {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+.note--media .button--share-cta {
+  display: flex;
+}
+.note .hidden-text {
+  display: none;
+}
+.note__img--portrait {
+  background-color: #e2e1e1;
+}
+.note__img--portrait img {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.note-featured {
+  margin-bottom: 40px;
+}

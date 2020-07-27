@@ -1,0 +1,36 @@
+.mg__bg {
+  background: repeat center bottom;
+}
+.mg__bg--space-1 {
+  background-image: url(images/backgrounds/bg-space-1.jpg);
+}
+.mg__bg--farm-1 {
+  background-image: url(images/backgrounds/bg-farm-1.jpg);
+}
+.mg__bg--desert-1 {
+  background-image: url(images/backgrounds/bg-desert-1.jpg);
+}
+.mg__bg--beach-1 {
+  background-image: url(images/backgrounds/bg-beach-1.jpg);
+}
+
+/* PROVISIONAL ESTILO CUANDO HAY MÁS DE 9 elementos en el nivel secundario del home*/
+/* PROVISIONAL ESTILO CUANDO HAY MÁS DE 9 elementos en el nivel secundario del home*/
+.mg__bg--beach-1 {
+  background-image: none;
+  background-color: #53bbdb !important;
+}
+.mg__bg--farm-1 {
+  background-image: none;
+  background-color: #dbd76f !important;
+}
+
+.mg__bg--desert-1 {
+  background-image: none;
+  background-color: #efd565 !important;
+}
+
+.mg__bg--space-1 {
+  background-image: none;
+  background-color: #a3bec9 !important;
+}

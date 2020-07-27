@@ -1,0 +1,146 @@
+.acciones_maguare {
+  padding: 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 150px);
+}
+.acciones_maguare::before {
+  display: none;
+}
+.acciones_maguare::after {
+  display: none;
+}
+div.share-box {
+  display: block;
+  position: absolute !important;
+}
+
+.acciones_maguare a.button:not(.actividad_sugerida_button) {
+  background: url(images/icon-descarga.png) no-repeat;
+  background-position: left center;
+  background-size: 35px 35px;
+  background-color: #e9c647;
+  padding-left: 40px !important;
+}
+
+.acciones_maguare a.actividad_sugerida_button {
+  background: url(images/ico-actividad.png) no-repeat;
+  background-position: left center;
+  background-size: 35px 35px;
+  background-color: #e9c647;
+  padding-left: 40px !important;
+}
+
+@media screen and (max-width: 968px) {
+  .acciones_maguare {
+    display: block;
+  }
+  .acciones_maguare a {
+    display: flex;
+    border: 5px white solid;
+  }
+}
+
+/*
+.acciones_maguare {
+  background: rgb(212, 147, 160);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+.acciones_maguare::before {
+  display: none;
+}
+.mg_resena {
+  background: lime;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.mg_libros {
+  background: #53bbdb;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.autoria_maguared {
+  background: #e0dd11;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.autoria_maguared::before {
+  display: none;
+}
+.share-box {
+  background: #c8f503;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+button.actividad_sugerida_button {
+  background: #06faee;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.mg_resena::before {
+  display: none;
+}
+
+.mg_resena .toggle {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.mg_resena .toggle__input:not(checked) {
+  display: none;
+}
+.mg_resena .toggle__input + label {
+  background-color: #d65d5d;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  width: 12em;
+}
+.mg_resena .toggle__input + label:before {
+  color: #fff;
+  font-family: "dashicons";
+  content: "\f132";
+  font-size: 1em;
+  padding-right: 0.3em;
+  width: 1em;
+}
+.mg_resena .toggle__input:not(checked) ~ .toggle__content {
+  display: none;
+}
+.mg_resena .toggle__input:checked ~ .toggle__content {
+  display: block;
+}
+.mg_resena .toggle__input:checked + label:before {
+  font-family: "dashicons";
+  content: "\f460";
+}
+.mg_resena .toggle__input + label .toggle__less,
+.toggle__input:checked + label .toggle__more {
+  display: none;
+}
+.mg_resena .toggle__input:checked + label .toggle__less {
+  display: inline;
+}
+.toggle__less,
+.toggle__more {
+  color: purple;
+  display: inline;
+}
+.toggle__label {
+  display: inline;
+  color: red;
+}
+
+#mg_resena_ch {
+  background: yellow !important;
+}
+*/

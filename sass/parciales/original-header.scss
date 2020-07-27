@@ -1,0 +1,246 @@
+.header {
+  background: #ebe8d8;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  position: fixed;
+  z-index: 8888;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    position: absolute;
+  }
+}
+.header__wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.header__welcome {
+  flex: 1 100%;
+  min-height: 50px;
+}
+
+.header__welcome > .link-home,
+.header__welcome .logo-magua,
+.header__welcome .logo-ministerioenhome {
+  display: none;
+}
+.header__welcome .heading-note {
+  font-size: 22px;
+  text-align: left;
+  margin: 15px auto 0;
+  padding: 0px 10px;
+  position: relative;
+}
+.header__welcome .button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+.header__search,
+.header__share {
+  flex: 1 50%;
+  height: 40px;
+}
+.header__search {
+  display: flex;
+}
+.header__search .input__search {
+  display: none;
+  text-align: left;
+  padding: 0 10px;
+}
+.header__search .button--advanced-search {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__search .button--advanced-search {
+    display: initial;
+  }
+}
+.header__search .button--search {
+  border-radius: 0;
+  width: 100%;
+  min-height: 40px;
+  vertical-align: top;
+  box-shadow: none;
+  position: relative;
+}
+.header__search .button--search:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  width: 22px;
+  height: 22px;
+  background: url(images/ico-m-glass.svg) center no-repeat;
+}
+.header__search .button--search-mobile {
+  border-radius: 0;
+  min-height: 40px;
+  padding: 10px 0;
+  width: 100%;
+}
+.header form {
+  width: 100%;
+}
+.header__share {
+  background-color: #dbc8ad;
+  padding: 7px 0px;
+}
+.header__share .button {
+  margin-right: 3px;
+}
+.header__share .button:last-of-type {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__welcome,
+  .header__search,
+  .header__share {
+    height: 50px;
+  }
+  .header__welcome {
+    flex: 1 50%;
+  }
+  .header__search {
+    flex: 1 19%;
+  }
+  .header__search .button--search {
+    min-height: 50px;
+  }
+  .header__share {
+    flex: 1 30%;
+    text-align: left;
+    padding: 12px 9px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    height: 52px;
+    text-align: center;
+  }
+  .header__wrapper {
+    flex-wrap: nowrap;
+  }
+  .header__welcome,
+  .header__search,
+  .header__share {
+    flex: auto;
+    height: auto;
+    width: auto;
+    float: none;
+    vertical-align: middle;
+  }
+
+  .header__share {
+    flex: 1;
+    padding: 12px 10px;
+  }
+  .header__search {
+    flex: 23%;
+  }
+  .header__welcome {
+    flex: 26%;
+    text-align: left;
+  }
+  .header__welcome .button--menu {
+    display: none;
+  }
+  .header__welcome > .link-home,
+  .header__welcome .logo-magua,
+  .header__welcome .logo-ministerioenhome {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .header__welcome .logo-magua {
+    border-left: 1px dashed #584b3e;
+    border-right: 1px dashed #584b3e;
+    padding: 0 20px;
+  }
+  .header__welcome .heading-note {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0;
+  }
+  .header__search {
+    padding-right: 5px;
+    border-right: 1px dashed #584b3e;
+  }
+  .header__search form {
+    display: flex;
+    width: auto;
+  }
+  .header__search .input__search {
+    display: inline-block;
+    width: 208px;
+    min-height: 23px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .header__search .button {
+    font-size: 13px;
+    padding: 4px 15px;
+  }
+  .header__search .button--search,
+  .header__search .button--advancedSearch {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .header__search .button--search {
+    border-radius: 7px;
+    width: auto;
+    min-height: auto;
+    margin-left: 10px;
+  }
+  .header__search .button--search:before {
+    display: none;
+  }
+  .header__share {
+    background: none;
+    height: auto;
+  }
+}
+
+/* ADICIONALES JAIME*/
+.logo-ministerioenhome img {
+  max-width: 180px;
+}
+.header__welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__welcome a.link-home {
+    margin-left: 3em;
+  }
+  .header__welcome h2 {
+    margin-right: 3em !important;
+  }
+}
+
+.header__welcome .logo-ministerioenhome {
+  align-self: center;
+}
+.header__welcome {
+  max-width: 450px;
+}
+/* FIN ADICIONALES JAIME*/
+.header__share {
+  max-width: 150px;
+  padding-left: 30px;
+}
+.header__search {
+  padding-left: 30px;
+  border-left: 1px dashed #584b3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

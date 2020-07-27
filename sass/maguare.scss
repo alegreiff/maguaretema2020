@@ -1,0 +1,70 @@
+//CARGA BASE WORDPRESS
+@import "parciales/variables";
+@import "parciales/loor";
+@import "parciales/notes";
+@import "parciales/miniatura-entrada";
+@import "parciales/fondos-home";
+@import "parciales/miniaturas-iconos";
+@import "parciales/ajustesjaime";
+@import "parciales/aliados";
+@import "parciales/acciones-single";
+@import "parciales/original-header";
+
+//@import "parciales/base";
+.notes-list {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 65px 10px 25px;
+  position: relative;
+}
+
+.button--dashed__bw,
+.link-1--dashed__bw {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .note__content .link-1 {
+    float: none;
+  }
+}
+
+.light-box__image img {
+  border-radius: 1em;
+}
+
+/* RESEÑAS */
+.maguare_resena {
+  background: $color_resenas_destacados;
+  padding: 1em;
+}
+
+/* AJUSTES REALBOOK PDF */
+.flipbook-menuWrapper .fa-volume-up,
+.flipbook-menuWrapper .fa-share-alt,
+.flipbook-menuWrapper .fa-print {
+  display: none !important;
+}
+
+.flipbook-menuWrapper .fa-expand {
+  font-size: 1.2em !important;
+  display: none !important;
+}
+
+/* header .header__wrapper nav.nav {
+  background: red;
+  margin-bottom: 150px !important;
+  padding-bottom: 150px !important;
+  display: block !important;
+} */
+
+.content-area {
+  margin-top: 3.2em;
+}
+
+img.destacada_maguare_seccion {
+  border-radius: 1em;
+}
+section.section-page .bx-wrapper {
+  border-radius: 0.77em;
+}
