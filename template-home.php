@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
-    <h2 style="background: crimson, color: white; padding 1em; font-size: 2em">lalala Hola. Estamos en pruebas delicadas</h2>
+    <h2 style="background: crimson, color: white; padding 1em; font-size: 2em">IniTZio</h2>
     
     <h2 style="background: crimson, color: white; padding 1em; font-size: 2em">maledetta primavera</h2>
         <!-- Start Opening -->
